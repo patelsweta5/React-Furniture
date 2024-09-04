@@ -33,12 +33,13 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul {
   padding: 0;
   margin: 0;
+  padding-left: 0rem !important;
   list-style: none;
 }
 
@@ -177,9 +178,9 @@ section {
 }
 
 .main-navigation {
-  position: absolute;
+  position: absolute !important;
   width: 100%;
-  padding: 0px;
+  padding: 0px !important;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -200,8 +201,8 @@ section {
 }
 
 header.nav-scrolled .main-navigation {
-  padding: 10px 0px;
-  position: fixed;
+  padding: 10px 0px !important;
+  position: fixed !important;
   z-index: 222;
   background-color: #2a2a2a ;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -215,6 +216,19 @@ header.nav-scrolled .main-navigation .navbar-brand {
 header.nav-scrolled .main-navigation .navbar-nav {
   margin-top: 0px;
 }
+
+header.nav-scrolled {
+  background: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+/* header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  transition: background 0.3s, padding 0.3s;
+  box-shadow: none;
+} */
 
 header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
   border-top: none;
@@ -242,6 +256,35 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 .navbar-light {
   padding: 10px 0px;
+}
+
+.form-select {
+  height: 44px !important;
+}
+
+.css-13cymwt-control {
+  height: 44px !important;
+}
+.css-1dimb5e-singleValue {
+  grid-area: 1 / 1 / 2 / 3;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: hsl(0, 0%, 20%);
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.css-1jqq78o-placeholder {
+  grid-area: 1 / 1 / 2 / 3;
+  color: hsl(0, 0%, 50%);
+  margin-left: 2px;
+  margin-right: 2px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 992px) {
@@ -320,7 +363,7 @@ button:focus:not(:focus-visible) {
 
 .main-banner {
   background-color: #333;
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/davide-cantelli-ajisKc2uuFk-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -395,6 +438,10 @@ button:focus:not(:focus-visible) {
   font-size: 14px;
   padding: 0px 15px;
   margin-bottom: 30px;
+}
+
+.selectCatagory{
+  border-radius: 17.5px;
 }
 
 .search-form #search-form button.main-button {
@@ -726,7 +773,7 @@ footer .about-widget img {
 
 footer h4 {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
   color: #2a2a2a;
   margin-bottom: 30px;
@@ -1557,10 +1604,48 @@ section.contact-us-page .right-info ul li span {
   color: #ffffff;
 }
 
+.css-1xc3v61-indicatorContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: color 150ms;
+  transition: color 150ms;
+  color: hsl(0, 0%, 80%);
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.css-1u9des2-indicatorSeparator {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 0px !important;
+  background-color: hsl(0, 0%, 80%);
+  margin-bottom: 12px;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 1080px !important;
+  }
+}
+
+.search-form {
+  position: relative;
+  z-index: 10;
+}
+
+.main-navigation {
+  z-index: 10;
+}
 
 
 
 
 
 
-/*# sourceMappingURL=style.css.map */
+

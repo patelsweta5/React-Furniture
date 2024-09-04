@@ -1,3 +1,6 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
 .App {
   text-align: center;
 }
@@ -28,6 +31,10 @@
   color: #61dafb;
 }
 
+.side-image {
+  margin-top: 10px !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.gallery-item {
+  margin: 5px;
+}
+.gallery-item {
+  margin-right: 5px;
 }

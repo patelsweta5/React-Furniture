@@ -1,0 +1,18 @@
+/* LivingRoom.css */
+
+.img {
+  width: 25% !important;
+  height: auto;
+  margin-bottom: 20px !important;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery a {
+  display: block;
+  margin: 10px;
+}
