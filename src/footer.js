@@ -8,6 +8,20 @@ import './assets/css/flex-slider.css';
 import footerImage from './assets/images/footer-logo.png';
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Smooth scrolling
+        });
+    };
+    window.addEventListener('scroll', function () {
+        const header = document.getElementById('bottom');
+        if (window.scrollY > 50) {
+          header.classList.add('show');
+        } else {
+          header.classList.remove('show');
+        }
+      });
     return (
         <footer>
             <div>
@@ -17,7 +31,8 @@ const Footer = () => {
                 <link rel="stylesheet" href="assets/css/owl.css" />
                 <link rel="stylesheet" href="assets/css/animate.css" />
                 <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-                <div class="container" style={{ marginTop: '80px' }}>
+                <div className='no-margin-footer'>
+                <div class="container" >
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="about-widget">
@@ -76,20 +91,22 @@ const Footer = () => {
                             <div class="sub-footer">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <p>Copyright © 2022 Designer Co., Ltd. All Rights Reserved.</p>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a href="#top" class="scroll-to-top">
-                                            Go to Top
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                        <a href="#top" class="scroll-to-top" id="bottom"
+                                         onClick={scrollToTop}>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                            
+                                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
-                                            </svg>
+                                            </svg> */}
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </footer>

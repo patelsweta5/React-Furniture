@@ -29,8 +29,8 @@ const images = [
     { src: Image4, alt: 'Trending Item 4' },
     { src: Image5, alt: 'Trending Item 5' },
     { src: Image6, alt: 'Trending Item 6' },
-    { src: Image7, alt: 'Trending Item 7' },
-    { src: Image8, alt: 'Trending Item 8' },
+    // { src: Image7, alt: 'Trending Item 7' },
+    // { src: Image8, alt: 'Trending Item 8' },
     // { src: Image9, alt: 'Trending Item 6' },
     // { src: Image10, alt: 'Trending Item 7' },
     // { src: Image11, alt: 'Trending Item 8' },
@@ -53,7 +53,30 @@ const BedRoom = () => {
         </div>
         <section className="trending-page" style={{ textAlign: 'center' }}>
         <div className ="living_img" style={{ textAlign: 'center' }}>
-          <h1>Modular Living Room Interior Design </h1>
+          <h1>Refreshing Modern bedroom design ideas</h1>
+          <p>From ultra thin bed design or sleek minimalist style bedrooms. Rustic decor bedroom to crisp white Scandainavian style . Choose your color style, bed style and Light design. Each elements of bedroom is connected with each other.</p>
+        </div>
+        <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]} className="gallery" style={{ textAlign: 'center' }}> 
+          {images.map((image, index) => (
+            <a href={image.src} key={index}>
+              <img src={image.src} alt={image.alt} style={{ width: '30%', margin: '5px' }}  />
+            </a>
+          ))}
+        </LightGallery>
+        <div className ="living_img" style={{ textAlign: 'center' }}>
+          <h1>Smart Bedroom Wardrobe Design ideas</h1>
+          <p>All bedroom wardrobe have the same basic function to provide safe place to your cloths and accessories. The way to design this place can be challenging. Think about out of the box design options for your wardrobe design. Here are some designer wardrobe which are becoming popular. If you are looking exclusive idea for you, connect with us.</p>
+        </div>
+        <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]} className="gallery" style={{ textAlign: 'center' }}> 
+          {images.map((image, index) => (
+            <a href={image.src} key={index}>
+              <img src={image.src} alt={image.alt} style={{ width: '30%', margin: '5px' }}  />
+            </a>
+          ))}
+        </LightGallery>
+        <div className ="living_img" style={{ textAlign: 'center' }}>
+          <h1>Dressing table- Create the perfect spot</h1>
+          <p>All bedroom wardrobe have the same basic function to provide safe place to your cloths and accessories. The way to design this place can be challenging. Think about out of the box design options for your wardrobe design. Here are some designer wardrobe which are becoming popular. If you are looking exclusive idea for you, connect with us.</p>
         </div>
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]} className="gallery" style={{ textAlign: 'center' }}> 
           {images.map((image, index) => (

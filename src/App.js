@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
 import Explore from './explore';
-import Trending from './trending';
+import Services from './services';
 import Explorework from './explorework';
 import Footer from './footer';
 import Modularkitchen from './modularkitchen';
@@ -14,12 +14,22 @@ import ContactForm from './contactform';
 import Restaurant from './restaurant';
 import Office from './office';
 import Trunky from './trunky';
-import  Carousel1  from './carousel';
+import Furniture from './furniture';
+import Interior from './interior';
+import Carousel1 from './carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 // import Contact from './components/Contact';
 
 const App = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const showMenuBar = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle state
+  };
 
   window.addEventListener('scroll', function () {
     const header = document.getElementById('top');
@@ -29,6 +39,7 @@ const App = () => {
       header.classList.remove('nav-scrolled');
     }
   });
+
   return (
     <Router>
       <div>
@@ -41,11 +52,12 @@ const App = () => {
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation" >
+                aria-expanded={isMenuOpen ? 'true' : 'false'}
+                aria-label="Toggle navigation"
+                onClick={showMenuBar}>
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
+              <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <NavLink to="/" className="nav-link " activeclassname="active">Home</NavLink >
@@ -60,29 +72,27 @@ const App = () => {
                     <NavLink to="/explorework" className="nav-link" activeclassname="active">Explore Work</NavLink >
                   </li>
                   <li className="nav-item">
-                    <NavLink to="/trending" className="nav-link" activeclassname="active">Trending</NavLink >
+                    <NavLink
+                      to="#"
+                      className="nav-link dropdown-toggle"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      activeclassname="active"
+                    > Services </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{left :"unset"}}> 
+                      <li>
+                        <NavLink to="/furniture" className="dropdown-item">Furniture</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/interior" className="dropdown-item">Interior</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/trunky" className="dropdown-item">Trunky</NavLink >
+                      </li>
+                    </ul>
                   </li>
-                  {/* <li className="nav-item">
-                <NavLink  to="/modularkitchen" className="nav-NavLink ">Modularkitchen</NavLink >
-              </li>
-              <li className="nav-item">
-                <NavLink  to="/lovingroom" className="nav-NavLink ">livingroom</NavLink >
-              </li>
-              <li className="nav-item">
-                <NavLink  to="/bedroom" className="nav-NavLink ">BedRoom</NavLink >
-              </li> */}
-              {/* <li className="nav-item">
-                    <NavLink to="/carousel" className="nav-link" activeclassname="active">Carousel</NavLink >
-                  </li> */}
-                  <li className="nav-item">
-                    <NavLink to="/trunky" className="nav-link" activeclassname="active">Trunky</NavLink >
-                  </li>
-                  {/* <li className="nav-item">
-                    <NavLink to="/restaurant" className="nav-link" activeclassname="active">Restaurant</NavLink >
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/office" className="nav-link" activeclassname="active">Office</NavLink >
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -94,7 +104,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/explorework" element={<Explorework />} />
-          <Route path="/trending" element={<Trending />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/lovingroom" element={<Livingroom />} />
           <Route path="/modularkitchen" element={<Modularkitchen />} />
@@ -103,6 +113,8 @@ const App = () => {
           <Route path="/restaurant" element={<Restaurant />} />
           <Route path="/office" element={<Office />} />
           <Route path="/trunky" element={<Trunky />} />
+          <Route path="/furniture" element={<Furniture />} />
+          <Route path="/interior" element={<Interior />} />
           <Route path="/carousel" element={<Carousel1 />} />
         </Routes>
       </div>

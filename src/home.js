@@ -7,7 +7,10 @@ import './assets/css/templatemo-572-designer.css';
 import './assets/css/owl.css';
 import './assets/css/flex-slider.css';
 import myImage from './assets/images/explore-work-left-image.jpg';
-import interiorImg from './assets/images/whats-trending-item-image.jpg'
+import video from './assets/images/3770034-hd_1920_1080_25fps.mp4';
+import interiorimg from './assets/images/interior.png'
+import furnitureimg from './assets/images/furniture.png';
+import turnkeyimg from './assets/images/business.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Select from 'react-select';
@@ -16,12 +19,13 @@ import ContactForm from './contactform';
 import './vendor/bootstrap/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Carousel1 from './carousel';
+import Card from 'react-bootstrap/Card';
 
 const Home = () => {
-   
+
     const [selectedCatagory, setSelectedCatagory] = useState();
-    const [selectedPlan , setSelectedPlan] = useState();
-    
+    const [selectedPlan, setSelectedPlan] = useState();
+
     const typeOfCatagory = [
         {
             label: "Modular Kitchens",
@@ -60,14 +64,14 @@ const Home = () => {
     const searchNow = () => {
         const totalCategory = typeOfCatagory.concat(typeOfPlan);
         totalCategory.map((catagory) => {
-            if((selectedCatagory && selectedCatagory.value == catagory.value) ||(selectedPlan && selectedPlan.value == catagory.value) ) {
-              navigate('' + catagory.value +'');
+            if ((selectedCatagory && selectedCatagory.value == catagory.value) || (selectedPlan && selectedPlan.value == catagory.value)) {
+                navigate('' + catagory.value + '');
             }
         });
-        
+
     }
 
-    const handleChangePlan =(selectedPlan) => {
+    const handleChangePlan = (selectedPlan) => {
         setSelectedPlan(selectedPlan);
     }
     return (
@@ -76,11 +80,9 @@ const Home = () => {
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></link>
 
             <div className="">
-                <Carousel1 /> {/* Use the Carousel1 component here */}
-            
-               
+                <Carousel1 />
             </div>
-            
+
             <div className="search-form">
                 <div className="container">
                     <div className="row">
@@ -95,10 +97,10 @@ const Home = () => {
                                                 id="chooseCategory"
                                                 name="Category"
                                                 aria-label="Default select example"
-                                                value={selectedCatagory }
-                                                style={{backgroundColor: "lightblue",  borderradius: "8px"}}
+                                                value={selectedCatagory}
+                                                style={{ backgroundColor: "lightblue", borderradius: "8px" }}
                                                 onChange={handleChange}
-                                                class="form-select"                                              
+                                                class="form-select"
                                             />
                                         </fieldset>
                                     </div>
@@ -111,14 +113,12 @@ const Home = () => {
                                                 name="Paln"
                                                 aria-label="Default select example"
                                                 value={selectedPlan}
-                                                style={{backgroundColor: "lightblue"}}
+                                                style={{ backgroundColor: "lightblue" }}
                                                 onChange={handleChangePlan}
-                                                class="form-select"
-                                              
-                                            />
+                                                class="form-select"/>
                                         </fieldset>
-                                    </div>                                   
-                                    <div className="col-lg-12" style={{marginTop:"30px"}}>
+                                    </div>
+                                    <div className="col-lg-12" style={{ marginTop: "30px" }}>
                                         <fieldset>
                                             <button className="main-button" onClick={searchNow}>Search Now</button>
                                         </fieldset>
@@ -129,8 +129,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-
             <section className="explore-work" id="explore">
                 <div className="container expanded">
                     <div className="row">
@@ -139,20 +137,20 @@ const Home = () => {
                                 <h2>Explore Some Of Our Latest<br /><em>Interior Design Work</em>.</h2>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-7">
                             <div className="left-image">
-                                <img src={myImage} alt="Interior Design Work" />
+                                <video src={video} width="600" height="500" controls loop autoPlay />
+                                {/* <img src={myImage} alt="Interior Design Work" /> */}
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                             <div className="right-content">
                                 <ul>
                                     <li>
                                         <h4>Interior Design</h4>
                                         <ul className="info">
                                             <li>
-                                                
-                                                <h6>
+                                                 <h6>
                                                     <Link to="/restaurant">
                                                         The Cafe and Restaurant
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -162,43 +160,19 @@ const Home = () => {
                                                 </h6>
                                             </li>
                                             <li>
-                                               
+
                                                 <em>Elevating Ambiance with Exceptional Furniture Designs for Cafes, Hotels, Restaurants, and Offices.</em>
                                             </li>
                                         </ul>
                                     </li>
-                                    {/* <li>
-                                        <h4>Building &amp; Developing</h4>
-                                        <ul className="info">
-                                            <li>
-                                               
-                                                <h6>
-                                                    <a href="explore.html">
-                                                        Home Land Port Canaveral Suites
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                                        </svg>
-                                                    </a>
-                                                </h6>
-                                            </li>
-                                            <li>
-                                                <span className="float-start">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-map-fill" viewBox="0 0 16 16">
-                                                        <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z" />
-                                                    </svg>
-                                                    Miami Beach, Florida, USA
-                                                </span>
-                                                <em>This is based on latest Bootstrap v5.1.3 CSS layout where you can easily edit and use Bootstrap components.</em>
-                                            </li>
-                                        </ul>
-                                    </li> */}
+
                                     <li>
                                         <h4>Giving Your Brand Power</h4>
                                         <ul className="info">
                                             <li>
-                                                
+
                                                 <h6>
-                                                <Link to="/office">
+                                                    <Link to="/office">
                                                         Office Design
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                                                             <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -207,7 +181,25 @@ const Home = () => {
                                                 </h6>
                                             </li>
                                             <li>
-                                               
+
+                                                <em>Feel free to download &amp; use this template for your websites. Please tell your friends about TemplateMo.</em>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Antique work</h4>
+                                        <ul className="info">
+                                            <li>
+                                                <h6>
+                                                    <Link to="/office">
+                                                        Temple Design
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                        </svg>
+                                                    </Link>
+                                                </h6>
+                                            </li>
+                                            <li>
                                                 <em>Feel free to download &amp; use this template for your websites. Please tell your friends about TemplateMo.</em>
                                             </li>
                                         </ul>
@@ -220,7 +212,7 @@ const Home = () => {
             </section>
 
 
-            <section className="whats-trending">
+            {/* <section className="whats-trending">
                 <div className="container expanded">
                     <div className="row">
                         <div className="col-lg-6 align-self-center">
@@ -243,15 +235,74 @@ const Home = () => {
                                             <span>Guest Room Decoration</span>
                                         </div>
                                     </div>
-                                    <img src={interiorImg} alt="" />
+                                    <img src={"./assets/images/whats-trending-item-image.jpg"} alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section> */}
+            <section>
+                <div className='container expanded'>
+                    <div className="row">
+                        {/* <div className="col-lg-12"> */}
+                            <div className="section-heading">
+                                <h2>Have a quick look of <br /><em>our services</em></h2>
+                            </div>
+                            <div className="col-lg-4">
+                                <Card style={{ width: '20rem' }}>
+                                    <Card.Body>
+                                        <img src={furnitureimg} alt="" style={{ width: '65px', height: '65px' }} />
+                                        <Card.Title style={{ fontSize: '17px', fontWeight: '700', color: '#2a2a2a' }}>Furniture</Card.Title>
+                                        <br />
+                                        <Card.Text style={{ marginRight: '10px', marginLeft: '10px' }}>
+                                            Create furniture masterpieces that seamlessly blend aesthetics, functionality, and sustainability to bring your dream vision to life.</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-lg-4">
+                                <Card style={{ width: '20rem' }}>
+                                    <Card.Body>
+                                        <img src={turnkeyimg} alt="" style={{ width: '65px', height: '65px' }} />
+                                        <Card.Title style={{ fontSize: '17px', fontWeight: '700', color: '#2a2a2a' }}>Turnkey Projects</Card.Title>
+                                        <br />
+                                        <Card.Text style={{ marginRight: '10px', marginLeft: '10px' }}>
+                                            Experience hassle-free project execution with our end-to-end services, from concept to completion, tailored to your requirements.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-lg-4">
+                                <Card style={{ width: '20rem' }}>
+                                    <Card.Body>
+                                        <img src={interiorimg} alt="" style={{ width: '65px', height: '65px' }} />
+                                        <Card.Title style={{ fontSize: '17px', fontWeight: '700', color: '#2a2a2a' }}>Interior</Card.Title>
+                                        <br />
+                                        <Card.Text style={{ marginRight: '10px', marginLeft: '10px' }}>
+                                            Transform your spaces with innovative and personalized designs that reflect your unique style and enhance functionality.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                    {/* </div> */}
+                </div>
             </section>
-            <ContactForm></ContactForm>
-            <Footer></Footer>
+            <section className="call-to-action" style={{marginTop: '100px'}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-8">
+                            <h2>Ready to transform your space?</h2>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="white-button">
+                                <Link to="/contact">Get In Touch</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <Footer></Footer>
         </div>
     );
 };
