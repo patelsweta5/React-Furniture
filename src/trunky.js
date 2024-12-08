@@ -138,6 +138,26 @@ const Trunky = () => {
               </div>
             </div>
           </div>
+          <div className="mt-3">
+            <div className="row">
+              <div className="col-md-6">
+              <img src={Image6} alt="" />
+              </div>
+              <div className="col-md-6">
+              <img src={Image6} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="mt-3">
+            <div className="row">
+              <div className="col-md-6">
+              <img src={Image6} alt="" />
+              </div>
+              <div className="col-md-6">
+              <img src={Image6} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="call-to-action">

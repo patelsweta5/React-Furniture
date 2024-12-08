@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/animate.css';
@@ -12,6 +12,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Footer from'./footer';
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
@@ -36,9 +41,11 @@ const Contact = () => {
 
     <section className="contact-page-map">
         <div className="container expanded">
-            <div className="row">
+             <div className="row">
                 <div className="col-lg-12">
-                
+                <div className="section-heading">
+                                            <h2>Our<br/><em>Location</em></h2>
+                                        </div>
                 	 <div id="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="550px" frameBorder="0"  allowfullscreen=""></iframe>
                     </div>
@@ -86,7 +93,7 @@ const Contact = () => {
                                 <ul>
                                     <li>
                                         <div className="icon"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11c0-4.97-4.03-9-9-9zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.3c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div>
-                                        <h6>Mailing Address</h6>
+                                        <h6>Address</h6>
                                         <span>Sunny Isles Beach, Florida 33160, USA</span>
                                     </li>
                                     <li>

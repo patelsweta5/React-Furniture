@@ -119,7 +119,7 @@ section {
 
 @media (min-width: 576px) {
   section {
-    margin-top: 60px;
+    margin-top: 50px;
     padding-top: 15px;
   }
 }
@@ -376,19 +376,19 @@ button:focus:not(:focus-visible) {
 
 .main-banner {
   background-color: #333;
-  background-image: url(../images/davide-cantelli-ajisKc2uuFk-unsplash.jpg);
+  /* background-image: url(../images/davide-cantelli-ajisKc2uuFk-unsplash.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 170px 0px 270px 0px;
+  padding: 0px 0px 270px 0px;
   text-align: center;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .main-banner {
     padding: 270px 0px 400px 0px;
   }
-}
+} */
 
 .main-banner h6 {
   font-size: 20px;
@@ -1758,3 +1758,76 @@ section.contact-us-page .right-info ul li span {
   margin-bottom: 15px;
 }
 
+.card-container{
+  display: flex;
+    margin-top: 2rem;
+    /* padding: 1rem; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.services-card-container {
+  color: #fff;
+  /* padding: 2rem; */
+  width: 30rem;
+  min-height: 29rem;
+  text-align: center;
+  box-shadow: 0 4px 6px #0000001a;
+  position: relative;
+  /* margin: 1rem .5rem; */
+  overflow-y: auto;
+  border-radius: 3px;
+}
+.service-card-description {
+  font-family: Archivo;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  height: 10rem;
+  word-wrap: break-word;
+  padding: 1rem;
+  }
+
+  .services-card-container {
+    cursor: pointer;
+  }
+
+
+  .main-banner {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-carousel .carousel-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .carousel-content h1 {
+    font-size: 50px;
+    font-style: normal;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .carousel-content p {
+    color: white;
+  }
+
+  .imageHeight {
+  height: 400px;
+  }

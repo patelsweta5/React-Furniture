@@ -47,8 +47,8 @@ const Explorework = () => {
                                     <span className="banner">Interior Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Design Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Design Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -63,8 +63,8 @@ const Explorework = () => {
                                     <span className="banner">Exterior Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Design Exterior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Design Exterior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -79,8 +79,8 @@ const Explorework = () => {
                                     <span className="banner">Bedroom Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Bedroom Design Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Bedroom Design Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -95,8 +95,8 @@ const Explorework = () => {
                                     <span className="banner">Little Bungalow</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Bungalow Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Bungalow Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -111,8 +111,8 @@ const Explorework = () => {
                                     <span className="banner">Tea Table Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Tea Table Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Tea Table Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -127,8 +127,8 @@ const Explorework = () => {
                                     <span className="banner">Interior Bed Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Bedroom Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Bedroom Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -143,8 +143,8 @@ const Explorework = () => {
                                     <span className="banner">White Theme Interior</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>White Theme Bedroom</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>White Theme Bedroom</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -159,8 +159,8 @@ const Explorework = () => {
                                     <span className="banner">Specific Interior Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Specific Design Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Specific Design Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -175,8 +175,8 @@ const Explorework = () => {
                                     <span className="banner">Another Interior Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Design Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Design Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -191,8 +191,8 @@ const Explorework = () => {
                                     <span className="banner">Circle Mirror Room</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Circle Mirror Interior</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Circle Mirror Interior</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -207,8 +207,8 @@ const Explorework = () => {
                                     <span className="banner">Exterior Decor</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Minimal Exterior Decor</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Minimal Exterior Decor</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>
@@ -223,8 +223,8 @@ const Explorework = () => {
                                     <span className="banner">Glass Table Design</span>
                                     <div className="hover-effect">
                                         <div className="inner-content">
-                                            <a href="explore.html"><h4>Glass Table Design</h4></a>
-                                            <a className="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <a href="#"><h4>Glass Table Design</h4></a>
+                                            <a className="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                             </svg></a>
                                         </div>

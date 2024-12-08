@@ -25,101 +25,108 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const App = () => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [activeNav, setActiveNav] = useState(""); // State to track the active nav item
 
-  const showMenuBar = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle state
-  };
+	const showMenuBar = () => {
+		setIsMenuOpen(!isMenuOpen); // Toggle state
+	};
 
-  window.addEventListener('scroll', function () {
-    const header = document.getElementById('top');
-    if (window.scrollY > 50) {
-      header.classList.add('nav-scrolled');
-    } else {
-      header.classList.remove('nav-scrolled');
-    }
-  });
+	const addActive = (navItem) => {
+		setActiveNav(navItem); // Update the active item
+	};
 
-  return (
-    <Router>
-      <div>
-        <header id="top" >
-          <nav className="main-navigation navbar navbar-expand-lg navbar-light">
-            <div className='container'>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded={isMenuOpen ? 'true' : 'false'}
-                aria-label="Toggle navigation"
-                onClick={showMenuBar}>
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <NavLink to="/" className="nav-link " activeclassname="active">Home</NavLink >
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/about" className="nav-link" activeclassname="active">About Us</NavLink >
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/contact" className="nav-link" activeclassname="active">Contact Us</NavLink >
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/explorework" className="nav-link" activeclassname="active">Explore Work</NavLink >
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      to="#"
-                      className="nav-link dropdown-toggle"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      activeclassname="active"
-                    > Services </NavLink>
-                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{left :"unset"}}> 
-                      <li>
-                        <NavLink to="/furniture" className="dropdown-item">Furniture</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/interior" className="dropdown-item">Interior</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/trunky" className="dropdown-item">Trunky</NavLink >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+	window.addEventListener('scroll', function () {
+		const header = document.getElementById('top');
+		if (window.scrollY > 50) {
+			header.classList.add('nav-scrolled');
+		} else {
+			header.classList.remove('nav-scrolled');
+		}
+	});
 
-        </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/explorework" element={<Explorework />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/footer" element={<Footer />} />
-          <Route path="/lovingroom" element={<Livingroom />} />
-          <Route path="/modularkitchen" element={<Modularkitchen />} />
-          <Route path="/bedroom" element={<BedRoom />} />
-          <Route path="/contactform" element={<ContactForm />} />
-          <Route path="/restaurant" element={<Restaurant />} />
-          <Route path="/office" element={<Office />} />
-          <Route path="/trunky" element={<Trunky />} />
-          <Route path="/furniture" element={<Furniture />} />
-          <Route path="/interior" element={<Interior />} />
-          <Route path="/carousel" element={<Carousel1 />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+	return (
+		<Router>
+			<div>
+				<header id="top" >
+					<nav className="main-navigation navbar navbar-expand-lg navbar-light">
+						<div className='container'>
+							<button
+								className="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNav"
+								aria-controls="navbarNav"
+								aria-expanded={isMenuOpen ? 'true' : 'false'}
+								aria-label="Toggle navigation"
+								onClick={showMenuBar}>
+								<span className="navbar-toggler-icon"></span>
+							</button>
+							<div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
+								<ul className="navbar-nav">
+									<li className="nav-item">
+										<NavLink to="/" className="nav-link " >Home</NavLink >
+									</li>
+									<li className="nav-item">
+										<NavLink to="/about" className="nav-link" >About Us</NavLink >
+									</li>
+									<li className="nav-item">
+										<NavLink to="/contact" className="nav-link" >Contact Us</NavLink >
+									</li>
+									<li className="nav-item">
+										<NavLink to="/explorework" className="nav-link" >Explore Work</NavLink >
+									</li>
+									<li className="nav-item">
+										<a
+										href="#"
+										className={`nav-link dropdown-toggle ${activeNav === "furniture" ? "active" : ""}`}
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										id="services"
+										onClick={() => addActive("furniture")}
+										>
+										Services
+										</a>
+										<ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ left: "unset" }}>
+											<li>
+												<NavLink to="/furniture" className="dropdown-item">Furniture</NavLink>
+											</li>
+											<li>
+												<NavLink to="/interior" className="dropdown-item">Interior</NavLink>
+											</li>
+											<li>
+												<NavLink to="/trunky" className="dropdown-item">Trunky</NavLink >
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+
+				</header>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/explorework" element={<Explorework />} />
+					<Route path="/services" element={<Services />} />
+					<Route path="/footer" element={<Footer />} />
+					<Route path="/lovingroom" element={<Livingroom />} />
+					<Route path="/modularkitchen" element={<Modularkitchen />} />
+					<Route path="/bedroom" element={<BedRoom />} />
+					<Route path="/contactform" element={<ContactForm />} />
+					<Route path="/restaurant" element={<Restaurant />} />
+					<Route path="/office" element={<Office />} />
+					<Route path="/trunky" element={<Trunky />} />
+					<Route path="/furniture" element={<Furniture />} />
+					<Route path="/interior" element={<Interior />} />
+					<Route path="/carousel" element={<Carousel1 />} />
+				</Routes>
+			</div>
+		</Router>
+	);
 };
 
 export default App;

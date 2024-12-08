@@ -1,0 +1,165 @@
+%PDF-1.3
+1 0 obj
+<<
+/CreationDate (D:20240502220019)
+/Producer (XCHANGING)
+/Title ( )
+/Outlines 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Outlines
+/Count 0
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+/Encoding /MacRomanEncoding
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Arial
+/Encoding /MacRomanEncoding
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/Name /F3
+/BaseFont /TimesNewRoman
+/Encoding /MacRomanEncoding
+>>
+endobj
+8 0 obj
+[ /PDF /Text ]
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources <</Procset 8 0 R
+/Font << /F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R >>
+>>
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<< /Length 11 0 R>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 8 612 Tm
+9 TL
+-0.10 Tc
+T*( ) Tj
+T*( ) Tj
+T*( ) Tj
+T*(SMBD76A.1       BUREAU SIGNING MESSAGE PAPER REPORT - GROUP BROKER NUMBER  6492                                                                PAGE :   1) Tj
+T*(    960                                                                                                                                        RUN DATE : 02/05/24) Tj
+T*(                                                                                                                                               RUN TIME : 21:18:29) Tj
+T*( ) Tj
+T*(BROKER NUMBER : 6492) Tj
+T*( ) Tj
+T*(                              PREMIUM) Tj
+T*( ) Tj
+T*(SETTLEMENT CCY CODE : EUR) Tj
+T*( ) Tj
+T*(ACTUAL PAYMENT DATE : 08/05/24) Tj
+T*( ) Tj
+T*(BUREAU SIGN REF    REFERENCE1   REFERENCE2   CLOS CCY EXCHANGE RATE          NA AMT CLOS           NA AMT SETT  BUS CAT/PROC DATE TOT/TOC LATE INST NO/DATE ENT TYPE) Tj
+T*(23/01/24-21741-02  FI987J23A000 D3                                                                    8,531.25+    PRM/02052024        /                     NPM) Tj
+T*(23/01/24-21741-03  FI987J23A000 D3                                                                    9,340.63-    PRM/02052024        /                     NPM) Tj
+T*( ) Tj
+T*(          TOTALS FOR ACT PAY DATE  08/05/24    CREDIT AMT :             8,531.25  DEBIT AMT :             9,340.63  BALANCE :               809.38-) Tj
+T*( ) Tj
+T*(          TOTALS FOR : EUR  PREMIUM            CREDIT AMT :             8,531.25  DEBIT AMT :             9,340.63  BALANCE :               809.38-) Tj
+T* ET
+endstream
+endobj
+11 0 obj
+1574
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources <</Procset 8 0 R
+/Font << /F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R >>
+>>
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<< /Length 14 0 R>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 8 612 Tm
+9 TL
+-0.10 Tc
+T*( ) Tj
+T*( ) Tj
+T*( ) Tj
+T*(SMBD76A.1       BUREAU SIGNING MESSAGE PAPER REPORT - GROUP BROKER NUMBER  6492                                                                PAGE :   2) Tj
+T*(    961                                                                                                                                        RUN DATE : 02/05/24) Tj
+T*(                                                                                                                                               RUN TIME : 21:18:29) Tj
+T*( ) Tj
+T*(BROKER NUMBER : 6492) Tj
+T*( ) Tj
+T*(                              CLAIM) Tj
+T*( ) Tj
+T*(SETTLEMENT CCY CODE : GBP) Tj
+T*( ) Tj
+T*(ACTUAL PAYMENT DATE : 00/00/00) Tj
+T*( ) Tj
+T*(BUREAU SIGN REF    REFERENCE1   REFERENCE2   CLOS CCY EXCHANGE RATE          NA AMT CLOS           NA AMT SETT  BUS CAT/PROC DATE TOT/TOC LATE INST NO/DATE ENT TYPE) Tj
+T*(02/05/24-20339-01  003          PU996H23A000                                                        300,000.00+    CLM/02052024        /                     NCL) Tj
+T*( ) Tj
+T*(          TOTALS FOR ACT PAY DATE  00/00/00    CREDIT AMT :           300,000.00  DEBIT AMT :                 0.00  BALANCE :           300,000.00+) Tj
+T*( ) Tj
+T*(          TOTALS FOR : GBP  CLAIM              CREDIT AMT :           300,000.00  DEBIT AMT :                 0.00  BALANCE :           300,000.00+) Tj
+T*() Tj
+T* ET
+endstream
+endobj
+14 0 obj
+1412
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Pages
+/Count 2
+/MediaBox  [ 0 0 792 612 ]
+/Kids  [
+9 0 R
+12 0 R
+]
+>>
+endobj
+trailer
+<<
+/Size 15
+/Root 3 0 R
+/Info 1 0 R
+>>
+%%EOF

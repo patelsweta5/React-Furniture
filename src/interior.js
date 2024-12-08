@@ -66,7 +66,7 @@ const Interior = () => {
                     <p>We tremendously work hard on conceptual development, site inspections, space planning, research along with construction management to introduce nothing but the best interior design for your home, office and work space.  We take in the account of every tiny detail from our precious clients prior to execution of the design.  As a leading interior designers, we believe in providing the best decoration enriched with the latest trend and beautiful designing feature that mesmerizes the every guest that enters your space. </p>
 
                 </div>
-                <video src={video}  height="500" controls loop autoPlay />
+                <video src={video} height="500" controls loop autoPlay />
             </section>
             <section className='trending-page'>
                 <div className='container expanded'>
@@ -75,11 +75,11 @@ const Interior = () => {
                     </div>
                     <div className="row">
                         <div className="col-lg-6 no-margin-left">
-                        <div className="">
-                                <img src={interiordesign} alt="about" style={{height: '438px'}}/>
+                            <div className="">
+                                <img src={interiordesign} alt="about" style={{ height: '438px' }} />
                             </div>
                         </div>
-                        <div className="col-lg-6 services" style={{padding: "30px"}}>
+                        <div className="col-lg-6 services" style={{ padding: "30px" }}>
                             <h2>Residential Interior Design</h2>
                             <p>Our residential interior design services are designed to create beautiful and functional homes that reflect your personal style and preferences.</p>
                             <ul>
@@ -115,7 +115,7 @@ const Interior = () => {
                         </div>
                     </div>
                     <div className="row">
-                    <div className="col-lg-6 services" style={{padding: "30px"}}>
+                        <div className="col-lg-6 services" style={{ padding: "30px" }}>
                             <h2>Office Interior Design</h2>
                             <p>Our office interior design services are designed to create modern and functional workspaces that reflect your brand and values and enhance employee productivity and satisfaction.</p>
                             <ul>
@@ -150,18 +150,18 @@ const Interior = () => {
                             </ul>
                         </div>
                         <div className="col-lg-6 no-margin-left">
-                        <div className="">
-                                <img src={interiordesign} alt="about" style={{height: '438px'}} />
+                            <div className="">
+                                <img src={interiordesign} alt="about" style={{ height: '438px' }} />
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 no-margin-left">
-                        <div className="">
-                                <img src={interiordesign} alt="about" style={{height: '438px'}}/>
+                            <div className="">
+                                <img src={interiordesign} alt="about" style={{ height: '438px' }} />
                             </div>
                         </div>
-                        <div className="col-lg-6 services" style={{padding: "30px"}}>
+                        <div className="col-lg-6 services" style={{ padding: "30px" }}>
                             <h2>Commercial Interior Design</h2>
                             <p>Our commercial interior design services are designed to create inspiring and functional spaces that enhance productivity and creativity.</p>
                             <ul>
@@ -198,66 +198,22 @@ const Interior = () => {
                     </div>
                 </div>
             </section>
-            <section className='trending-page'>
-                <div className='container expanded no-margin-left'>
+
+            <section className="call-to-action">
+                <div className="container">
                     <div className="row">
-                        {/* <div className="col-lg-12"> */}
-                            <div className="section-heading">
-                                <h2>Have a quick look of <br /><em>our services</em></h2>
-                            </div>
-                            <div className="col-lg-4">
-                                <Card >
-                                    <Card.Body>
-                                           <Card.Text className='interiorCardText' >
-                                            <h2>Planning and Design</h2>
-                                           This step involves working closely with the client to understand their vision and requirements for the project. This includes site analysis, feasibility studies, conceptual design, and 3D visualization. Our experienced team of architects and designers will collaborate with you to create a design that is functional, aesthetic, and sustainable.
-                                           </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                            <div className="col-lg-4">
-                                <Card >
-                                    <Card.Body>
-                                        {/* <Card.Title style={{ fontSize: '17px', fontWeight: '700', color: '#2a2a2a' }}>Turnkey Projects</Card.Title>
-                                        <br /> */}
-                                        <Card.Text className='interiorCardText' >
-                                            <h2>Estimation and Documentation</h2>
-                                            Once the design is finalized, we provide a detailed estimate of the project cost and timeline. This includes material and labor costs, project scheduling, and construction documentation. We believe in transparent communication and ensure that our clients are fully informed of the project progress at every stage.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                            <div className="col-lg-4">
-                                <Card>
-                                    <Card.Body>
-                                        {/* <Card.Title style={{ fontSize: '17px', fontWeight: '700', color: '#2a2a2a' }}>Interior</Card.Title>
-                                        <br /> */}
-                                        <Card.Text className='interiorCardText' >
-                                            <h2>Project Completion and Evaluation</h2>
-                                            This step involves the successful completion of the project within the agreed timeline and budget. We conduct a final evaluation to ensure that all work meets the highest standards of quality and excellence. Our commitment to customer satisfaction is reflected in our post-completion follow-up to ensure that the project meets our clients’ expectations.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                        <div className="col-lg-8">
+                            <h2>Hire us to Work on a Project?</h2>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="white-button">
+                                <Link to="/contact">Get In Touch</Link>
                             </div>
                         </div>
-                    {/* </div> */}
+                    </div>
                 </div>
             </section>
-        <section className="call-to-action">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-8">
-                        <h2>Hire us to Work on a Project?</h2>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="white-button">
-                            <Link to="/contact">Get In Touch</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <Footer></Footer>
+            <Footer></Footer>
         </div>
     );
 }
