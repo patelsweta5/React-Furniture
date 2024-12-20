@@ -19,7 +19,7 @@ import Interior from './interior';
 import Carousel1 from './carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import logo from './assets/images/white-logo.png';
 
 // import Contact from './components/Contact';
 
@@ -29,6 +29,7 @@ const App = () => {
 	const [activeNav, setActiveNav] = useState(""); // State to track the active nav item
 
 	const showMenuBar = () => {
+		
 		setIsMenuOpen(!isMenuOpen); // Toggle state
 	};
 
@@ -51,6 +52,7 @@ const App = () => {
 				<header id="top" >
 					<nav className="main-navigation navbar navbar-expand-lg navbar-light">
 						<div className='container'>
+						<a className="navbar-brand" href="index.html"><img src={logo} alt="" /></a>
 							<button
 								className="navbar-toggler"
 								type="button"
@@ -62,41 +64,41 @@ const App = () => {
 								onClick={showMenuBar}>
 								<span className="navbar-toggler-icon"></span>
 							</button>
-							<div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
+							<div className= "collapse navbar-collapse"  id="navbarNav">
 								<ul className="navbar-nav">
 									<li className="nav-item">
-										<NavLink to="/" className="nav-link " >Home</NavLink >
+										<NavLink to="/" className="nav-link "  onClick={() => addActive("")}>Home</NavLink >
 									</li>
 									<li className="nav-item">
-										<NavLink to="/about" className="nav-link" >About Us</NavLink >
+										<NavLink to="/about" className="nav-link"  onClick={() => addActive("about")}>About Us</NavLink >
 									</li>
 									<li className="nav-item">
-										<NavLink to="/contact" className="nav-link" >Contact Us</NavLink >
+										<NavLink to="/contact" className="nav-link"  onClick={() => addActive("contact")}>Contact Us</NavLink >
 									</li>
 									<li className="nav-item">
-										<NavLink to="/explorework" className="nav-link" >Explore Work</NavLink >
+										<NavLink to="/explorework" className="nav-link"  onClick={() => addActive("explorework")}>Explore Work</NavLink >
 									</li>
 									<li className="nav-item">
 										<a
 										href="#"
-										className={`nav-link dropdown-toggle ${activeNav === "furniture" ? "active" : ""}`}
+										className={`nav-link dropdown-toggle ${activeNav === "furniture" || activeNav === "interior" || activeNav === "trunky" ? "active" : ""}`}
 										role="button"
 										data-bs-toggle="dropdown"
-										aria-expanded="false"
+										// aria-expanded="false"
 										id="services"
-										onClick={() => addActive("furniture")}
+										//  onClick={() => addActive("furniture")}
 										>
 										Services
 										</a>
 										<ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ left: "unset" }}>
 											<li>
-												<NavLink to="/furniture" className="dropdown-item">Furniture</NavLink>
+												<NavLink to="/furniture" className="dropdown-item" onClick={() => addActive("furniture")}>Furniture</NavLink>
 											</li>
 											<li>
-												<NavLink to="/interior" className="dropdown-item">Interior</NavLink>
+												<NavLink to="/interior" className="dropdown-item" onClick={() => addActive("interior")}>Interior</NavLink>
 											</li>
 											<li>
-												<NavLink to="/trunky" className="dropdown-item">Trunky</NavLink >
+												<NavLink to="/trunky" className="dropdown-item" onClick={() => addActive("trunky")}> Trunky</NavLink >
 											</li>
 										</ul>
 									</li>

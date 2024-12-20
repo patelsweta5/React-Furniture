@@ -117,7 +117,7 @@ const Home = () => {
                                                 value={selectedCatagory}
                                                 style={{ backgroundColor: "lightblue", borderradius: "8px" }}
                                                 onChange={handleChange}
-                                                class="form-select"
+                                                className="form-select"
                                             />
                                         </fieldset>
                                     </div>
@@ -132,7 +132,7 @@ const Home = () => {
                                                 value={selectedPlan}
                                                 style={{ backgroundColor: "lightblue" }}
                                                 onChange={handleChangePlan}
-                                                class="form-select" />
+                                                className="form-select" />
                                         </fieldset>
                                     </div>
                                     <div className="col-lg-12" style={{ marginTop: "30px" }}>
@@ -285,14 +285,14 @@ const Home = () => {
                                     <div className="services-card-container mb-4"  onClick={() => handleNavigate('modularkitchen')} >
                                         <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }}  onClick={() => handleNavigate('modularkitchen')}/>
                                         <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Modular Kitchen</h3>
-                                        <p class="service-card-description" >We craft simple modular kitchen designs that are the perfect blend of functionality and style.All our modern kitchen design ideas can be customised to fit your budget and existing space. We also have kitchen interior designs that work for all shapes: Be it a L-shaped kitchen, U-shaped kitchen or open kitchen design - crafting a kitchen interior design that works best for your home is our goal! </p>
+                                        <p className="service-card-description" >We craft simple modular kitchen designs that are the perfect blend of functionality and style.All our modern kitchen design ideas can be customised to fit your budget and existing space. We also have kitchen interior designs that work for all shapes: Be it a L-shaped kitchen, U-shaped kitchen or open kitchen design - crafting a kitchen interior design that works best for your home is our goal! </p>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                 <div className="services-card-container mb-4" onClick={() => handleNavigate('modularkitchen')}>
                                     <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }}onClick={() => handleNavigate('lovingroom')}/>
                                     <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Living Room Furniture</h3>
-                                    <p class="service-card-description" >Discover a wide range of handpicked, living room interior designs and décor ideas at Livspace. We bring you living room designs that are customizable, practical and trendy. From modular TV units to wall paintings and living room wall designs, you’ll find all the inspiration you’ll need to get started. </p>
+                                    <p className="service-card-description" >Discover a wide range of handpicked, living room interior designs and décor ideas at Livspace. We bring you living room designs that are customizable, practical and trendy. From modular TV units to wall paintings and living room wall designs, you’ll find all the inspiration you’ll need to get started. </p>
                                 </div>
                                 </div>
                             {/* </div> */}
@@ -303,7 +303,7 @@ const Home = () => {
                                 <div className="services-card-container mb-4" onClick={() => handleNavigate('modularkitchen')}>
                                     <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }} />
                                     <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Bed Room Furniture</h3>
-                                    <p class="service-card-description" >Our carefully-curated master bedroom designs come in a variety of styles, colour schemes and decor ideas - all of which can be customised to your taste. Whether you’re looking for a contemporary style or a room with rustic sensibilities, we’ve got all the bedroom interior design inspiration you’ll need to create a space that reflects your personality and taste. </p>
+                                    <p className="service-card-description" >Our carefully-curated master bedroom designs come in a variety of styles, colour schemes and decor ideas - all of which can be customised to your taste. Whether you’re looking for a contemporary style or a room with rustic sensibilities, we’ve got all the bedroom interior design inspiration you’ll need to create a space that reflects your personality and taste. </p>
 
                                 </div>
                                 </div>
@@ -311,7 +311,7 @@ const Home = () => {
                                 <div className="services-card-container mb-4" onClick={() => handleNavigate('modularkitchen')}>
                                     <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }} />
                                     <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Office Furniture</h3>
-                                    <p class="service-card-description" >Redefining Interior Design and Build through technology. Our endeavor is to put the joy back into the design and build process by driving customer delight in every step which is only possible through a bespoke tech-suite combined with category defining processes and benchmarks.</p>
+                                    <p className="service-card-description" >Redefining Interior Design and Build through technology. Our endeavor is to put the joy back into the design and build process by driving customer delight in every step which is only possible through a bespoke tech-suite combined with category defining processes and benchmarks.</p>
                                 </div>
                                 </div>
                             </div>
@@ -321,14 +321,14 @@ const Home = () => {
                                 <div className="services-card-container" >
                                     <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }} />
                                     <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Temple Furniture</h3>
-                                    <p class="service-card-description" >The prayer room in Indian households is a peaceful and spiritual place. Where one can feel closer to the divinity.The wooden home temple designs are quite versatile and can fit into most of the rooms.We build a temple according to your faith.</p>
+                                    <p className="service-card-description" >The prayer room in Indian households is a peaceful and spiritual place. Where one can feel closer to the divinity.The wooden home temple designs are quite versatile and can fit into most of the rooms.We build a temple according to your faith.</p>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                 <div className="services-card-container">
                                     <img src={Image5} alt="" style={{ height: '300px', borderRadius: '3px' }} />
                                     <h3 style={{ color: '#ff565b', marginTop: '10px' }}>Cafe And Restaurant Furniture</h3>
-                                    <p class="service-card-description" >Setting up a restaurant is no easy feat, there are a whole lot of things that one has to consider, including licenses, chefs, real estate, location, deocr & furniture + ftting. We understand this simply because we have worked with serveral restaurants.Furniture is a crucial part of the decor for a restaurant or a cafe.</p>
+                                    <p className="service-card-description" >Setting up a restaurant is no easy feat, there are a whole lot of things that one has to consider, including licenses, chefs, real estate, location, deocr & furniture + ftting. We understand this simply because we have worked with serveral restaurants.Furniture is a crucial part of the decor for a restaurant or a cafe.</p>
                                     </div>
                                    
                                 </div>

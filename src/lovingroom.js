@@ -67,6 +67,22 @@ const LivingRoom = () => {
           ))}
         </LightGallery>
       </section>
+      <section className="call-to-action" style={{ marginTop: '100px' }}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-8">
+                            <h2>Ready to transform your space?</h2>
+
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="white-button">
+                                <Link to="/contact">Get In Touch</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </section>
+       <Footer></Footer>
     </div>
   );
 }

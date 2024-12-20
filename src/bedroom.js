@@ -21,6 +21,7 @@ import Image6 from './assets/images/trending-item-06.jpg';
 import Image7 from './assets/images/trending-item-07.jpg';
 import Image8 from './assets/images/trending-item-08.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const images = [
     { src: Image1, alt: 'Trending Item 1' },
@@ -86,6 +87,22 @@ const BedRoom = () => {
           ))}
         </LightGallery>
       </section>
+      <section className="call-to-action" style={{ marginTop: '100px' }}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-8">
+                            <h2>Ready to transform your space?</h2>
+
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="white-button">
+                                <Link to="/contact">Get In Touch</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer></Footer>
       </div>
     );
 }

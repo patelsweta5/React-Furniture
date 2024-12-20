@@ -84,31 +84,31 @@ const Interior = () => {
                             <p>Our residential interior design services are designed to create beautiful and functional homes that reflect your personal style and preferences.</p>
                             <ul>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Space planning</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Furniture and decor selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Lighting design</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Material selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Project management and execution</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Procurement</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Layout design.</span>
                                 </li>
                             </ul>
@@ -120,31 +120,31 @@ const Interior = () => {
                             <p>Our office interior design services are designed to create modern and functional workspaces that reflect your brand and values and enhance employee productivity and satisfaction.</p>
                             <ul>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Space planning</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Furniture and decor selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Lighting design</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Material selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Project management and execution</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Procurement</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Layout design.</span>
                                 </li>
                             </ul>
@@ -166,31 +166,31 @@ const Interior = () => {
                             <p>Our commercial interior design services are designed to create inspiring and functional spaces that enhance productivity and creativity.</p>
                             <ul>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Space planning</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Furniture and decor selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Lighting design</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Material selection</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Project management and execution</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Procurement</span>
                                 </li>
                                 <li className='res-interior'>
-                                    <span><i class="fa-brands fa-codepen"></i></span>
+                                    <span><i className="fa-brands fa-codepen"></i></span>
                                     <span className="services_list">Layout design.</span>
                                 </li>
                             </ul>

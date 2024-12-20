@@ -66,45 +66,7 @@ const About = () => {
                                 <p>Designer HTML5 Template is 100% free to download provided by TemplateMo website. You are allowed to use this template for your commercial or business websites. You are <strong>NOT allowed</strong> to redistribute the downloadable ZIP file of this template on any other website. Please contact us for more info.
 
                                     <br /><br />Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                {/* <div className="accordion" id="accordionExample">
-                                    <h4>hr</h4>
-                                    <div className="accordion-item" style={{ border: 'none' }}>
-                                        <h2 className="accordion-header" id="headingOne">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseOne">
-                                            What Services Do You Provide?
-                                            </button>
-                                        </h2>
-                                        <div class="collapse" className="accordion-collapse collapse" id="collapseExample" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>We offer a range of interior design services including space planning, furniture selection, color consultation, lighting design, and window treatments.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item" style={{ border: 'none' }}>
-                                        <h2 className="accordion-header" id="headingTwo">
-                                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Do You Provide End-To-End/Turnkey Services?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div className="accordion-body">
-                                                <p>We Have Collaboration With Our Consulting Teams And Partners. You Have The Option To Appoint Them For The Complete End-To-End Solutions.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item" style={{ border: 'none' }}>
-                                        <h2 className="accordion-header" id="headingThree">
-                                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Do you offer a warranty or guarantee on your work?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div className="accordion-body">
-                                                <p>Yes, we stand behind our work and offer a warranty or guarantee on all of our interior design services.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
+                                
                             </div>
                         </div>
                     </div>
@@ -122,8 +84,8 @@ const About = () => {
                                     What Services Do You Provide?
                                 </button>
                             </h2>
-                            <div class="collapse" className="accordion-collapse collapse" id="collapseExample" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div className="accordion-collapse collapse" id="collapseExample" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>We offer a range of interior design services including space planning, furniture selection, color consultation, lighting design, and window treatments.</p>
                                 </div>
                             </div>
