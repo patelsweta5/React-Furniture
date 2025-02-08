@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -16,8 +16,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import Footer from './footer';
 import Image1 from './assets/images/ushaper1.webp';
 import Image2 from './assets/images/ushaper1.webp';
-import Image3 from './assets/images/Kitchen1 (1).jpeg';
-import Image4 from './assets/images/Kitchen1 (1).jpeg';
+import Image3 from './assets/images/kitchen/kitchen1.jpg';
+import Image4 from './assets/images/kitchen/kitchen1.jpg';
 import Image5 from './assets/images/trending-item-05.jpg';
 import Image6 from './assets/images/trending-item-06.jpg';
 import Image7 from './assets/images/trending-item-07.jpg';
@@ -40,6 +40,11 @@ const images = [
 ]
 
 const Trunky = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   return (
     <div>
       <div className="page-banner change-name">

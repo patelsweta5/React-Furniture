@@ -12,14 +12,14 @@ import 'lightgallery/css/lg-zoom.css'; // Zoom plugin CSS
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Footer from'./footer';
-import Image1 from './assets/images/ushaper1.webp';
-import Image2 from './assets/images/ushaper1.webp';
-import Image3 from './assets/images/Kitchen1 (1).jpeg';
-import Image4 from './assets/images/Kitchen1 (1).jpeg';
-import Image5 from './assets/images/trending-item-05.jpg';
-import Image6 from './assets/images/trending-item-06.jpg';
-import Image7 from './assets/images/trending-item-07.jpg';
-import Image8 from './assets/images/trending-item-08.jpg';
+import Image1 from './assets/images/bedroom/bedroom1.jpeg';
+import Image2 from './assets/images/bedroom/bedroom2.jpeg';
+import Image3 from './assets/images/bedroom/bedroom3.jpeg';
+import Image4 from './assets/images/bedroom/bedroom4.jpeg';
+import Image5 from './assets/images/bedroom/bedroom5.jpeg';
+import Image6 from './assets/images/bedroom/bedroom10.jpeg';
+import Image7 from './assets/images/bedroom/bedroom11.jpeg';
+import Image8 from './assets/images/bedroom/bedroom12.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -30,8 +30,8 @@ const images = [
     { src: Image4, alt: 'Trending Item 4' },
     { src: Image5, alt: 'Trending Item 5' },
     { src: Image6, alt: 'Trending Item 6' },
-    // { src: Image7, alt: 'Trending Item 7' },
-    // { src: Image8, alt: 'Trending Item 8' },
+    { src: Image7, alt: 'Trending Item 7' },
+    { src: Image8, alt: 'Trending Item 8' },
     // { src: Image9, alt: 'Trending Item 6' },
     // { src: Image10, alt: 'Trending Item 7' },
     // { src: Image11, alt: 'Trending Item 8' },
@@ -45,8 +45,8 @@ const BedRoom = () => {
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
                 <div className="header-text">
-                  <h2><em>Kitchen </em>Interior Design</h2>
-                  <p>Discover the art of creating a captivating living room interior.</p>
+                  <h2><em>BedRoom </em>Interior Design</h2>
+                  <p>Discover the art of creating a captivating bedroom room interior.</p>
                 </div>
               </div>
             </div>

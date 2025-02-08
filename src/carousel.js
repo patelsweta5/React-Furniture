@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
-import Image1 from './assets/images/site1 (4).jpeg';
-import Image2 from './assets/images/site1 (5).jpeg';
-import Image3 from './assets/images/site1 (6).jpeg';
-import Image4 from './assets/images/Kitchen1 (1).jpeg';
-import Image5 from './assets/images/trending-item-05.jpg';
-import Image6 from './assets/images/trending-item-06.jpg';
+import Image1 from './assets/images/livingroom/livingroom14.jpeg';
+import Image2 from './assets/images/bedroom/bedroom12.jpeg';
+import Image3 from './assets/images/livingroom/livingroom1.jpeg';
+import Image4 from './assets/images/kitchen/kitchen10.jpeg';
 
 const Carousel1 = () => {
 

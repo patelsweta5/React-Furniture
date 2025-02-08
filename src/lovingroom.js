@@ -12,24 +12,29 @@ import 'lightgallery/css/lg-zoom.css'; // Zoom plugin CSS
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Footer from './footer';
-import Image1 from './assets/images/site1 (1).jpeg';
-import Image2 from './assets/images/site1 (2).jpeg';
-import Image3 from './assets/images/site1 (3).jpeg';
-import Image4 from './assets/images/site1 (7).jpeg';
-import Image5 from './assets/images/site1 (8).jpeg';
-import Image6 from './assets/images/site1 (9).jpeg';
-import Image7 from './assets/images/site1 (4).jpeg';
-import Image8 from './assets/images/site1 (5).jpeg';
-import Image9 from './assets/images/site1 (6).jpeg';
+import Image1 from './assets/images/livingroom/livingroom1.jpeg';
+ import Image2 from './assets/images/livingroom/livingroom2.jpeg';
+import Image3 from './assets/images/livingroom/livingroom3.jpeg';
+ import Image4 from './assets/images/livingroom/livingroom4.jpeg';
+import Image5 from './assets/images/livingroom/livingroom5.jpeg';
+import Image6 from './assets/images/livingroom/livingroom6.jpeg';
+import Image7 from './assets/images/livingroom/livingroom7.jpeg';
+import Image8 from './assets/images/livingroom/livingroom8.jpeg';
+ import Image9 from './assets/images/livingroom/livingroom9.jpeg';
+import Image10 from './assets/images/livingroom/livingroom10.jpeg';
+import Image11 from './assets/images/livingroom/livingroom11.jpeg';
+import Image12 from './assets/images/livingroom/livingroom12.jpeg';
+import Image13 from './assets/images/livingroom/livingroom13.jpeg';
+import Image14 from './assets/images/livingroom/livingroom14.jpeg';
+import Image15 from './assets/images/livingroom/livingroom15.jpeg';
 
-import interiorImg from './assets/images/whats-trending-item-image.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './assets/css/LivingRoom.css';
 
 const images = [
-  { src: Image1, alt: 'Trending Item 1' },
-  { src: Image2, alt: 'Trending Item 2' },
+  { src: Image1, alt: 'Trending Item 1' }, 
+  { src: Image2, alt: 'Trending Item 2' },   
   { src: Image3, alt: 'Trending Item 3' },
   { src: Image4, alt: 'Trending Item 4' },
   { src: Image5, alt: 'Trending Item 5' },
@@ -37,8 +42,13 @@ const images = [
   { src: Image7, alt: 'Trending Item 7' },
   { src: Image8, alt: 'Trending Item 8' },
   { src: Image9, alt: 'Trending Item 9' },
-  
-]
+  { src: Image10, alt: 'Trending Item 10' },
+  { src: Image11, alt: 'Trending Item 11' },
+  { src: Image12, alt: 'Trending Item 12' },
+  { src: Image13, alt: 'Trending Item 13' },  
+  { src: Image14, alt: 'Trending Item 14' },
+  { src: Image15, alt: 'Trending Item 15' },
+ ]
 
 const LivingRoom = () => {
   return (

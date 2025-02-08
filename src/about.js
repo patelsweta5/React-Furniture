@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
@@ -9,12 +9,17 @@ import './assets/css/owl.css';
 import './assets/css/flex-slider.css';
 import Footer from './footer';
 import interiordesign from './assets/images/design1.jpeg';
-import interiorImg from './assets/images/whats-trending-item-image.jpg'
+import interiorImg from './assets/images/aboutus.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
 
@@ -63,12 +68,45 @@ const About = () => {
                         </div>
                         <div className="col-lg-6 align-self-center">
                             <div className="right-content">
-                                <p>Designer HTML5 Template is 100% free to download provided by TemplateMo website. You are allowed to use this template for your commercial or business websites. You are <strong>NOT allowed</strong> to redistribute the downloadable ZIP file of this template on any other website. Please contact us for more info.
+                                <p>Welcome to [Your Company Name], where functionality meets elegance! We specialize in crafting high-quality furniture and providing bespoke interior design solutions tailored to transform your spaces. With a perfect blend of creativity, craftsmanship, and innovation, we aim to create environments that reflect your style and personality.
 
-                                    <br /><br />Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <br /><br />At [Your Company Name], we believe that every piece of furniture and every corner of a room should tell a story—yours. Let us help you create inspiring spaces that you’ll love for years to come.
+
+                                        Contact us today to start your journey toward a more beautiful and functional environment!</p>
                                 
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="interior-design">
+                <div className="container expanded">
+                    <div className="accordion" id="accordionExample">
+                        <div className="section-heading">
+                            <h2>We transform your vision into an artistic design
+                            <br /><em> Our Story</em>.</h2>
+                        </div>
+                        <div className="row">
+                        <div className="col-lg-5 align-self-center">
+                            <div className="vc_column-inner">
+                                <p>Welcome to [Your Company Name], where functionality meets elegance! We specialize in crafting high-quality furniture and providing bespoke interior design solutions tailored to transform your spaces. With a perfect blend of creativity, craftsmanship, and innovation, we aim to create environments that reflect your style and personality.
+
+                                    <br /><br />At [Your Company Name], we believe that every piece of furniture and every corner of a room should tell a story—yours. Let us help you create inspiring spaces that you’ll love for years to come.
+
+                                        Contact us today to start your journey toward a more beautiful and functional environment!</p>
+                                
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            {/* <div className="section-heading">
+                                <h2>A Company Who Specializes<br /><em> In Furniture Design</em>.</h2>
+                            </div> */}
+                            <div className="left-image">
+                                <img src={interiorImg} alt="about" />
+                            </div>
+                        </div>
+                        
+                    </div>
                     </div>
                 </div>
             </section>

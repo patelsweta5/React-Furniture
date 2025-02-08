@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect} from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import './assets/css/animate.css';
 import './assets/css/fontawesome.css';
@@ -35,6 +35,10 @@ const images = [
   ]
 
 const Office = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
     return (
         <div>
         <div className="page-banner change-name">
@@ -42,7 +46,7 @@ const Office = () => {
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
                 <div className="header-text">
-                  <h2><em>Office</em>Interior Design</h2>
+                  <h2><em>Office</em> Interior Design</h2>
                   <p>Discover the art of creating a captivating Restaurant interior.</p>
                 </div>
               </div>
@@ -51,7 +55,7 @@ const Office = () => {
         </div>
         <section className="trending-page" style={{ textAlign: 'center' }}>
         <div className ="living_img" style={{ textAlign: 'center' }}>
-          <h1>Modular Living Room Interior Design </h1>
+          <h1>Office Interior Design </h1>
         </div>
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]} className="gallery" style={{ textAlign: 'center' }}> 
           {images.map((image, index) => (
@@ -61,6 +65,22 @@ const Office = () => {
           ))}
         </LightGallery>
       </section>
+      <section className="call-to-action" style={{ marginTop: '100px' }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <h2>Ready to transform your space?</h2>
+
+            </div>
+            <div className="col-lg-4">
+              <div className="white-button">
+                <Link to="/contact">Get In Touch</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer></Footer>
       </div>
     );
 }

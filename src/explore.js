@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/animate.css';
@@ -13,6 +13,11 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Footer from'./footer';
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>

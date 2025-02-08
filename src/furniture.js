@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import logo from './logo.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
@@ -38,6 +38,10 @@ const images = [
 ]
 
 const Furniture = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   return (
     <div>
       <div className="page-banner change-name">

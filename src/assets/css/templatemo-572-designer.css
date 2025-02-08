@@ -952,7 +952,7 @@ footer .sub-footer a.scroll-to-top:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/site1 (6).jpeg');
+  background-image: url('../images/livingroom/livingroom1.jpeg');
   background-size: cover;
   background-position: center center;
   filter: grayscale(70%) brightness(50%);
@@ -1831,3 +1831,15 @@ section.contact-us-page .right-info ul li span {
   .imageHeight {
   height: 400px;
   }
+
+  .css-b62m3t-container {
+    padding : 0px !important;
+  }
+
+  /* .vc_column-inner {
+    margin-top: 65px !important;
+    padding-top: 0px !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    background-color: #ffffff !important;
+} */

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/animate.css';
@@ -14,8 +15,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import Footer from'./footer';
 import Image1 from './assets/images/ushaper1.webp';
 import Image2 from './assets/images/ushaper1.webp';
-import Image3 from './assets/images/Kitchen1 (1).jpeg';
-import Image4 from './assets/images/Kitchen1 (1).jpeg';
+import Image3 from './assets/images/kitchen/kitchen1.jpg';
+import Image4 from './assets/images/kitchen/kitchen1.jpg';
 import Image5 from './assets/images/trending-item-05.jpg';
 import Image6 from './assets/images/trending-item-06.jpg';
 import Image7 from './assets/images/trending-item-07.jpg';
@@ -37,6 +38,10 @@ const images = [
   ]
 
 const Restaurant = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
     return (
         <div>
         <div className="page-banner change-name">
@@ -44,7 +49,7 @@ const Restaurant = () => {
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
                 <div className="header-text">
-                  <h2><em>Restaurant</em>Interior Design</h2>
+                  <h2><em>Restaurant</em> Interior Design</h2>
                   <p>Discover the art of creating a captivating Restaurant interior.</p>
                 </div>
               </div>
@@ -53,7 +58,7 @@ const Restaurant = () => {
         </div>
         <section className="trending-page" style={{ textAlign: 'center' }}>
         <div className ="living_img" style={{ textAlign: 'center' }}>
-          <h1>Modular Living Room Interior Design </h1>
+          <h1>Restaurant Interior Design </h1>
         </div>
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]} className="gallery" style={{ textAlign: 'center' }}> 
           {images.map((image, index) => (
@@ -63,6 +68,22 @@ const Restaurant = () => {
           ))}
         </LightGallery>
       </section>
+      <section className="call-to-action" style={{ marginTop: '100px' }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <h2>Ready to transform your space?</h2>
+
+            </div>
+            <div className="col-lg-4">
+              <div className="white-button">
+                <Link to="/contact">Get In Touch</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer></Footer>
       </div>
     );
 }

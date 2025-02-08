@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import React, { useEffect, useState, useRef } from 'react';
+import { BrowserRouter as Router, Route, Routes, NavLink , Link} from 'react-router-dom';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
@@ -13,6 +13,7 @@ import BedRoom from './bedroom';
 import ContactForm from './contactform';
 import Restaurant from './restaurant';
 import Office from './office';
+import Temple from './temple';
 import Trunky from './trunky';
 import Furniture from './furniture';
 import Interior from './interior';
@@ -27,15 +28,27 @@ const App = () => {
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeNav, setActiveNav] = useState(""); // State to track the active nav item
+	const dropdownRef = useRef(null);
 
 	const showMenuBar = () => {
-		
+
 		setIsMenuOpen(!isMenuOpen); // Toggle state
 	};
 
 	const addActive = (navItem) => {
 		setActiveNav(navItem); // Update the active item
 	};
+
+	const closeDropdownOnOutsideClick = (e) => {
+		if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+			setActiveNav(""); // Close dropdown
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener("click", closeDropdownOnOutsideClick);
+		return () => document.removeEventListener("click", closeDropdownOnOutsideClick);
+	}, []);
 
 	window.addEventListener('scroll', function () {
 		const header = document.getElementById('top');
@@ -52,7 +65,9 @@ const App = () => {
 				<header id="top" >
 					<nav className="main-navigation navbar navbar-expand-lg navbar-light">
 						<div className='container'>
-						<a className="navbar-brand" href="index.html"><img src={logo} alt="" /></a>
+							<Link className="navbar-brand" to="/">
+								<img src={logo} alt="Logo" />
+							</Link>
 							<button
 								className="navbar-toggler"
 								type="button"
@@ -64,41 +79,46 @@ const App = () => {
 								onClick={showMenuBar}>
 								<span className="navbar-toggler-icon"></span>
 							</button>
-							<div className= "collapse navbar-collapse"  id="navbarNav">
+							<div className="collapse navbar-collapse" id="navbarNav">
 								<ul className="navbar-nav">
 									<li className="nav-item">
-										<NavLink to="/" className="nav-link "  onClick={() => addActive("")}>Home</NavLink >
+										<NavLink to="/" className="nav-link " onClick={() => addActive("")}>Home</NavLink >
 									</li>
 									<li className="nav-item">
-										<NavLink to="/about" className="nav-link"  onClick={() => addActive("about")}>About Us</NavLink >
+										<NavLink to="/about" className="nav-link" onClick={() => addActive("about")}>About Us</NavLink >
 									</li>
 									<li className="nav-item">
-										<NavLink to="/contact" className="nav-link"  onClick={() => addActive("contact")}>Contact Us</NavLink >
+										<NavLink to="/contact" className="nav-link" onClick={() => addActive("contact")}>Contact Us</NavLink >
 									</li>
-									<li className="nav-item">
-										<NavLink to="/explorework" className="nav-link"  onClick={() => addActive("explorework")}>Explore Work</NavLink >
+									<li className="nav-item dropdown">
+										<NavLink to="/explorework" className="nav-link" onClick={() => addActive("explorework")}>Explore Work</NavLink >
 									</li>
-									<li className="nav-item">
+									<li className="nav-item dropdown" ref={dropdownRef}>
 										<a
-										href="#"
-										className={`nav-link dropdown-toggle ${activeNav === "furniture" || activeNav === "interior" || activeNav === "trunky" ? "active" : ""}`}
-										role="button"
-										data-bs-toggle="dropdown"
-										// aria-expanded="false"
-										id="services"
-										//  onClick={() => addActive("furniture")}
+											href="#"
+											className={`nav-link dropdown-toggle ${["furniture", "interior", "trunky"].includes(activeNav) ? "active" : ""
+												}`}
+											role="button"
+											data-bs-toggle="dropdown"
+											onClick={() => setActiveNav(activeNav === "services" ? "" : "services")}
 										>
-										Services
+											Services
 										</a>
-										<ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ left: "unset" }}>
+										<ul className={`dropdown-menu ${activeNav === "services" ? "show" : ""}`}>
 											<li>
-												<NavLink to="/furniture" className="dropdown-item" onClick={() => addActive("furniture")}>Furniture</NavLink>
+												<NavLink to="/furniture" className="dropdown-item" onClick={() => setActiveNav("furniture")}>
+													Furniture
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/interior" className="dropdown-item" onClick={() => addActive("interior")}>Interior</NavLink>
+												<NavLink to="/interior" className="dropdown-item" onClick={() => setActiveNav("interior")}>
+													Interior
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/trunky" className="dropdown-item" onClick={() => addActive("trunky")}> Trunky</NavLink >
+												<NavLink to="/trunky" className="dropdown-item" onClick={() => setActiveNav("trunky")}>
+													Trunky
+												</NavLink>
 											</li>
 										</ul>
 									</li>
@@ -121,6 +141,7 @@ const App = () => {
 					<Route path="/contactform" element={<ContactForm />} />
 					<Route path="/restaurant" element={<Restaurant />} />
 					<Route path="/office" element={<Office />} />
+					<Route path="/temple" element={<Temple />} />
 					<Route path="/trunky" element={<Trunky />} />
 					<Route path="/furniture" element={<Furniture />} />
 					<Route path="/interior" element={<Interior />} />

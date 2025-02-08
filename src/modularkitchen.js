@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import './App.css';
 import './assets/css/animate.css';
 import './assets/css/fontawesome.css';
@@ -11,14 +11,14 @@ import 'lightgallery/css/lg-zoom.css'; // Zoom plugin CSS
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Footer from './footer';
-import Image1 from './assets/images/ushaper1.webp';
-import Image2 from './assets/images/ushaper1.webp';
-import Image3 from './assets/images/Kitchen1 (1).jpeg';
-import Image4 from './assets/images/Kitchen1 (1).jpeg';
-import Image5 from './assets/images/trending-item-05.jpg';
-import Image6 from './assets/images/trending-item-06.jpg';
-import Image7 from './assets/images/trending-item-07.jpg';
-import Image8 from './assets/images/trending-item-08.jpg';
+import Image1 from './assets/images/kitchen/kitchen1.jpg';
+import Image2 from './assets/images/kitchen/kitchen1.jpg';
+import Image3 from './assets/images/kitchen/kitchen1.jpg';
+import Image4 from './assets/images/kitchen/kitchen1.jpg';
+import Image5 from './assets/images/kitchen/kitchen1.jpg';
+import Image6 from './assets/images/kitchen/kitchen1.jpg';
+import Image7 from './assets/images/kitchen/kitchen1.jpg';
+import Image8 from './assets/images/kitchen/kitchen1.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -34,6 +34,10 @@ const images = [
   ]
 
 const Modularkitchen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   return (
     <div>
       <div className="page-banner change-name">

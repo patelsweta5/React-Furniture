@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/animate.css';
@@ -11,12 +11,30 @@ import interiorImg from './assets/images/whats-trending-item-image.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Footer from'./footer';
-const Contact = () => {
+import emailjs from '@emailjs/browser';
 
+const Contact = () => {
+    const form = useRef();
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+            publicKey: 'YOUR_PUBLIC_KEY',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
   return (
     <div>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
